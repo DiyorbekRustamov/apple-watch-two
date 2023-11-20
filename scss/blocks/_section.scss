@@ -1,7 +1,8 @@
 /* SECTION STYLE START */
 .site-main__wrapper{
     display: flex;
-    width: 1000px;
+    width: 100%;
+    max-width: 1000px;
     padding: 70px 0;
     flex-direction: column;
     justify-content: center;
@@ -13,34 +14,35 @@
         display: flex;
         align-items: flex-start;
         gap: 80px;
+
+        &-item{
+            width: 280px;
+            height: 253px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 30px;
+        }
+
+        &-title{
+            width: 280px;
+            color: #222;
+            font-family: Roboto;
+            font-size: 18px;
+            font-weight: 700;
+            line-height: 150%; 
+            text-transform: uppercase;
+        }
+
+        &-desc{
+            color: #333;
+            font-family: Roboto;
+            font-size: 15px;
+            font-weight: 400;
+            line-height: 160%; 
+        }
     }
     
-    &__item{
-        width: 280px;
-        height: 253px;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 30px;
-    }
-    
-    &__list-title{
-        width: 280px;
-        color: #222;
-        font-family: Roboto;
-        font-size: 18px;
-        font-weight: 700;
-        line-height: 150%; 
-        text-transform: uppercase;
-    }
-    
-    &__list-desc{
-        color: #333;
-        font-family: Roboto;
-        font-size: 15px;
-        font-weight: 400;
-        line-height: 160%; 
-    }
     
     &__link-wrapper{
         height: 26px;
